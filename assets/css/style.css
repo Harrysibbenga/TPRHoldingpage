@@ -1,0 +1,375 @@
+
+/* Basic styling */
+.lighter-blue {
+    background-color:#4DB3E6;
+}
+.darker-blue {
+    background-color:#144982; 
+}
+
+body {
+    color:black;
+    background-color:#144982;
+    font-size:20px;
+}
+
+.header-font-b {
+    font-family: realist,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.header-font {
+    font-family: realist,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Double Diagonal line */
+.cont {
+    overflow: hidden;
+    /* we don't want the pseudo-elements sticking out */
+}
+section {
+    position: relative;
+    background: #4DB3E6;
+    color: #fff;
+    text-align: center;
+    padding-bottom:4rem;
+}
+*,
+*:after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+section::before,
+section::after {
+  position: absolute;
+  content: '';
+  pointer-events: none;
+}
+
+.ss-style-doublediagonal {
+    z-index: 1;
+    background: #144982;
+}
+  
+.ss-style-doublediagonal::before,
+.ss-style-doublediagonal::after {
+    top: 0;
+    left: -25%;
+    z-index: -1;
+    width: 150%;
+    height: 75%;
+    background: inherit;
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+.ss-style-doublediagonal::before {
+    height: 50%;
+    background: #4DB3E6;
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+}
+/* ./Double Diagonal line */
+
+/* ./Basic styling */
+
+/* Mobile-tablet timeline */
+.card-header, .card-body {
+    padding:0;
+}
+.card-body {
+    padding-bottom:1rem;
+    border-bottom:5px solid #4DB3E6;
+    transition:all 0.1s ease-in;
+}
+.btn:hover {
+    color:white;
+}
+button {
+    background-color: #4DB3E6;
+}
+.clicked {
+    border-bottom:0.1rem solid white;
+    transition:all 0.3s ease-in;
+    background-color: #144982;
+}
+.col-10 h2, button{
+    height:100%;
+}
+
+#tablet-view .row, 
+#tablet-view .col-md-6, #tablet-view .col-sm-12{
+    padding:0;
+    margin:0;
+}
+
+#tablet-view .container-fluid {
+    padding:0;
+}
+
+
+#countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+    color: white;
+}
+.day {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+.hour {
+    position: absolute;
+    top: 50%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+.min {
+    position: absolute;
+    top: 50%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+.sec {
+    position: absolute;
+    top: 50%;
+    left: 71%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+.championship-title, #championship-title {
+    font-size:1.4rem;
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-family: realist,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+#locationTitle1,#locationTitle2,#locationTitle3,#locationTitle4,#locationTitle5 {
+   text-align:center;
+   color:black;
+}
+/* ./Mobile-tablet timeline */
+
+/* Laptop */
+#countDown11, #countDown22, #countDown33, #countDown44, #countDown55 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: white;
+}
+.carousel-container {
+    position: relative;
+    text-align: center;
+}
+/* ./Laptop */
+
+/* Coming soon section */
+#comingSoon .text-center {
+    padding:3rem;
+    padding-bottom:5rem;
+}
+/* ./Coming soon section */
+
+/* Contact form */
+.md-form input[type=date], .md-form input[type=datetime-local], .md-form input[type=email], .md-form input[type=number], .md-form input[type=password], .md-form input[type=search-md], .md-form input[type=search], .md-form input[type=tel], .md-form input[type=text], .md-form input[type=time], .md-form input[type=url], .md-form textarea.md-textarea {
+    color:#4DB3E6;
+}
+.md-form label {
+    color:#4DB3E6;
+}
+/* ./Contact form */
+/* Media queries */
+@media screen and (max-width:331px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.1rem;
+    }
+}
+@media (min-width:332px) and (max-width:357px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.2rem;
+    }
+}
+@media (min-width:358px) and (max-width:383px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.3rem;
+    }
+}
+@media (min-width:384px) and (max-width:408px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.4rem;
+    }
+}
+@media (min-width:409px) and (max-width:434px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.5rem;
+    }
+}
+@media (min-width:435px) and (max-width:459px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.6rem;
+    }
+}
+@media (min-width:460px) and (max-width:485px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.7rem;
+    }
+}
+@media (min-width:486px) and (max-width:510px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.8rem;
+    }
+}
+@media (min-width:511px) and (max-width:536px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:1.9rem;
+    }
+}
+@media (min-width:537px) and (max-width:561px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:2rem;
+    }
+}
+@media (min-width:562px) and (max-width:587px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:2.1rem;
+    }
+}
+@media (min-width:588px) and (max-width:612px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:2.2rem;
+    }
+}
+@media (min-width:613px) and (max-width:639px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:2.3rem;
+    }
+}
+@media (min-width:640px) and (max-width:664px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:2.4rem;
+    }
+}
+@media (min-width:665px) and (max-width:715px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:2.5rem;
+    }
+}
+@media (min-width:716px) and (max-width:740px) {
+    #countDown1, #countDown2, #countDown3, #countDown4, #countDown5 {
+        font-size:2.6rem;
+    }
+}
+@media (min-width:992px) {
+    #countDown11, #countDown22, #countDown33, #countDown44, #countDown55 {
+        font-size:3.8em;
+    }
+    .day {
+        position: absolute;
+        top: 44%;
+        left: 29%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .hour {
+        position: absolute;
+        top: 44%;
+        left: 43%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .min {
+        position: absolute;
+        top: 44%;
+        left: 57%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .sec {
+        position: absolute;
+        top: 44%;
+        left: 70.5%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width:1440px) {
+    #countDown11, #countDown22, #countDown33, #countDown44, #countDown55 {
+        font-size:4em;
+    }
+    .day {
+        left:36%;
+    }
+    .hour {
+        left:45%;
+    }
+    .min {
+        left:55%;
+    }
+    .sec {
+        left:64%;
+    }
+}
+@media (min-width:1920px) {
+    #countDown11, #countDown22, #countDown33, #countDown44, #countDown55 {
+        font-size: 5em;
+    }
+}
+@media (min-width:2560px) {
+    #countDown11, #countDown22, #countDown33, #countDown44, #countDown55 {
+        font-size:6.8em;
+    }
+    .day, .hour, .min, .sec{
+        top:40%;
+    }
+    .day {
+        left:36%;
+    }
+    .hour {
+        left:45%;
+    }
+    .min {
+        left:55%;
+    }
+    .sec {
+        left:64%;
+    }
+}
+/* ./Media queries */

@@ -352,20 +352,33 @@ button {
         left: 25%;
     }
     #brit {
-        left:43%;
+        left:31%;
     }
-    #porshe, #championship-title2{
+    #porshe{
         left:32%;
+    }
+    #championship-title2 {
+        left:7%;
     }
     #blank {
         left:24%;
     }
+    #locationTitle22, #locationTitle44 {
+        top: 23%;
+        position: absolute;
+        left: 35%;
+    }
 }
 @media (min-width:1440px) {
-    #locationTitle11, #locationTitle22, #locationTitle33, #locationTitle44 {
+    #locationTitle11, #locationTitle33 {
         top: 23%;
         position: absolute;
         left: 41%;
+    }
+    #locationTitle22, #locationTitle44 {
+        top: 23%;
+        position: absolute;
+        left: 38%;
     }
     #locationTitle55 {
         top: 23%;
@@ -376,11 +389,17 @@ button {
         /* 4em */
         font-size:3.8em;
     }
+    #brit {
+        left:35%;
+    }
     #tour {
         left: 29%;
     }
-    #porshe, #championship-title2 {
+    #porshe {
         left:35%;
+    }
+    #championship-title2 {
+        left:15%;
     }
     #blank {
         left:28%;

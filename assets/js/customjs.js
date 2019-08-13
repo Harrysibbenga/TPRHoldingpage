@@ -156,7 +156,7 @@ var x = setInterval(function() {
 
     // Display the result in the element with id
     document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-    document.getElementById("locationTitle2").innerHTML = 'Donington, Derbyshire';
+    document.getElementById("locationTitle2").innerHTML = 'Donington Park, Leicestershire';
     // If the count down is finished, write some text 
     if (distance < 0) {
         distance2 = DonningtonLive - now;
@@ -376,7 +376,7 @@ var x = setInterval(function() {
 }, 1000);
 
 
-// Count Down 4 Caterham Championship
+// Count Down 4 Caterham Seven 420R, 310R, and 270R Championships
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -406,8 +406,8 @@ var x = setInterval(function() {
 
    // Display the result in the element with id
    document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-   document.getElementById("locationTitle4").innerHTML = 'Donington, Derbyshire';
-   document.getElementById("championship-title").innerHTML ='Caterham Championship';
+   document.getElementById("locationTitle4").innerHTML = 'Donington Park, Leicestershire';
+   document.getElementById("championship-title").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
    // If the count down is finished, write some text 
    if (distance < 0) {
        distance2 = DonningtonLive - now;
@@ -431,7 +431,7 @@ var x = setInterval(function() {
            // Display the result in the element with id
            document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
            document.getElementById("live4").innerHTML = "";
-           document.getElementById("locationTitle4").innerHTML = 'Donington, Derbyshire';
+           document.getElementById("locationTitle4").innerHTML = 'Donington Park, Leicestershire';
            document.getElementById("championship-title").innerHTML ='Toyo Tyres 7 Race Series';
            document.getElementById("championship-title2").innerHTML ='Toyo Tyres 7 Race Series';
            if (distance3 < 0) {
@@ -457,8 +457,8 @@ var x = setInterval(function() {
                    document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
                    document.getElementById("live4").innerHTML = "";
                    document.getElementById("locationTitle4").innerHTML = 'Brands Hatch (Indy), Kent';
-                   document.getElementById("championship-title").innerHTML ='Caterham Championship';
-                   document.getElementById("championship-title2").innerHTML ='Caterham Championship';
+                   document.getElementById("championship-title").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
+                   document.getElementById("championship-title2").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
                    if (distance5 < 0) {
                        distance6 = BrandshatchLive - now;
                        // Time calculations for days, hours, minutes and seconds
@@ -724,7 +724,7 @@ var x = setInterval(function() {
 
     // Display the result in the element with id
     document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-    document.getElementById("locationTitle22").innerHTML = 'Donington, Derbyshire';
+    document.getElementById("locationTitle22").innerHTML = 'Donington Park, Leicestershire';
     // If the count down is finished, write some text 
     if (distance < 0) {
         distance2 = DonningtonLive - now;
@@ -944,7 +944,7 @@ var x = setInterval(function() {
 }, 1000);
 
 
-// Count Down 4 Caterham Championship
+// Count Down 4 Caterham Seven 420R, 310R, and 270R Championships
 // Update the count down every 1 second
 var x = setInterval(function() {
 
@@ -974,8 +974,8 @@ var x = setInterval(function() {
 
    // Display the result in the element with id
    document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-   document.getElementById("locationTitle44").innerHTML = 'Donington, Derbyshire';
-   document.getElementById("championship-title2").innerHTML ='Caterham Championship';
+   document.getElementById("locationTitle44").innerHTML = 'Donington Park, Leicestershire';
+   document.getElementById("championship-title2").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
    // If the count down is finished, write some text 
    if (distance < 0) {
        distance2 = DonningtonLive - now;
@@ -999,7 +999,7 @@ var x = setInterval(function() {
            // Display the result in the element with id
            document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
            document.getElementById("live44").innerHTML = "";
-           document.getElementById("locationTitle44").innerHTML = 'Donington, Derbyshire';
+           document.getElementById("locationTitle44").innerHTML = 'Donington Park, Leicestershire';
            document.getElementById("championship-title").innerHTML ='Toyo Tyres 7 Race Series';
            if (distance3 < 0) {
                distance4 = DonningtonLive2 - now;
@@ -1024,7 +1024,7 @@ var x = setInterval(function() {
                    document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
                    document.getElementById("live44").innerHTML = "";
                    document.getElementById("locationTitle44").innerHTML = 'Brands Hatch (Indy), Kent';
-                   document.getElementById("championship-title2").innerHTML ='Caterham Championship';
+                   document.getElementById("championship-title2").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
                    if (distance5 < 0) {
                        distance6 = BrandshatchLive - now;
                        // Time calculations for days, hours, minutes and seconds

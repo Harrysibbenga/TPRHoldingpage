@@ -1,14 +1,26 @@
-$("#year").text(new Date().getFullYear());
+$.noConflict();
+jQuery( document ).ready(function( $ ) {
 
-$('.carousel').carousel();
+    $("#year").text(new Date().getFullYear());
 
-$('button').click(function (){
-    if ($('div').hasClass('show')){
-        $(this).addClass('clicked');
-    } else {
-        $(this).removeClass('clicked');
-    }
+    $('.carousel').carousel();
+
+    $('button').click(function (){
+        if ($(this).parent().siblings('.collapse').hasClass('show')){
+            $(this).addClass('clicked');
+        } else {
+            $(this).removeClass('clicked');
+        }
+    });
+
 });
+
+
+
+
+
+
+
 
 
 

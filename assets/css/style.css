@@ -175,6 +175,17 @@ button {
    text-align:center;
    color:black;
 }
+.live {
+    width: 25px;
+    margin-bottom:0.2rem;
+    margin-left: 0.2rem;
+}
+.live-text {
+    font-size: 1.5rem;
+    font-family: realist,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
 /* ./Mobile-tablet timeline */
 
 /* Laptop */
@@ -346,6 +357,31 @@ button {
         text-transform: uppercase;
         font-size: 1rem;
     }
+    #tour {
+        left: 25%;
+    }
+    #brit {
+        left:31%;
+    }
+    #porshe{
+        left:32%;
+    }
+    #championship-title2 {
+        left:7%;
+    }
+    #blank {
+        left:24%;
+    }
+    #locationTitle22, #locationTitle44 {
+        top: 23%;
+        position: absolute;
+        left: 35%;
+    }
+    #locationTitle11, #locationTitle33 {
+        top: 23%;
+        position: absolute;
+        left: 41%;
+    }
 }
 @media (min-width:1024px) {
     #tour {
@@ -367,6 +403,43 @@ button {
         top: 23%;
         position: absolute;
         left: 35%;
+    }
+}
+
+@media (min-width:1200px) {
+    #countDown11, #countDown22, #countDown33, #countDown44, #countDown55 {
+        /* 3.8 */
+        font-size:4.1em; 
+    }
+    #locationTitle11, #locationTitle33 {
+        top: 23%;
+        position: absolute;
+        left: 41%;
+    }
+    #locationTitle22, #locationTitle44 {
+        top: 23%;
+        position: absolute;
+        left: 38%;
+    }
+    #locationTitle55 {
+        top: 23%;
+        position: absolute;
+        left: 44%;
+    }
+    #brit {
+        left:35%;
+    }
+    #tour {
+        left: 29%;
+    }
+    #porshe {
+        left:35%;
+    }
+    #championship-title2 {
+        left:15%;
+    }
+    #blank {
+        left:28%;
     }
 }
 @media (min-width:1440px) {

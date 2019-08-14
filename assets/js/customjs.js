@@ -51,7 +51,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown1").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-        document.getElementById("live1").innerHTML = "Live";
+        document.getElementById("live1").classList.remove("d-none");
         if (distance2 < 0) {
             distance3 = Knockhill - now;
             // Time calculations for days, hours, minutes and seconds
@@ -62,7 +62,7 @@ var x = setInterval(function() {
         
             // Display the result in the element with id
             document.getElementById("countDown1").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-            document.getElementById("live1").innerHTML = "";
+            document.getElementById("live1").classList.add("d-none");
             document.getElementById("locationTitle1").innerHTML = 'Knockhill, Scotland';
             if (distance3 < 0) {
                 distance4 = KnockhillLive - now;
@@ -74,7 +74,7 @@ var x = setInterval(function() {
             
                 // Display the result in the element with id
                 document.getElementById("countDown1").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                document.getElementById("live1").innerHTML = "Live";
+                document.getElementById("live1").classList.remove("d-none");
                 if (distance4 < 0) {
                     distance5 = Silverstone - now;
                     // Time calculations for days, hours, minutes and seconds
@@ -85,7 +85,7 @@ var x = setInterval(function() {
                 
                     // Display the result in the element with id
                     document.getElementById("countDown1").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                    document.getElementById("live1").innerHTML = "";
+                    document.getElementById("live1").classList.add("d-none");
                     document.getElementById("locationTitle1").innerHTML = 'Silverstone, Northamptonshire';
                     if (distance5 < 0) {
                         distance6 = SilverstoneLive - now;
@@ -97,7 +97,7 @@ var x = setInterval(function() {
                     
                         // Display the result in the element with id
                         document.getElementById("countDown1").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                        document.getElementById("live1").innerHTML = "Live";
+                        document.getElementById("live1").classList.remove("d-none");
                         if (distance6 < 0) {
                             distance7 = Brandshatch - now;
                             // Time calculations for days, hours, minutes and seconds
@@ -108,7 +108,7 @@ var x = setInterval(function() {
                         
                             // Display the result in the element with id
                             document.getElementById("countDown1").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                            document.getElementById("live1").innerHTML = "";
+                            document.getElementById("live1").classList.add("d-none");
                             document.getElementById("locationTitle1").innerHTML = 'Brands Hatch, Kent';
                             if (distance7 < 0) {
                                 distance8 = BrandshatchLive - now;
@@ -120,7 +120,7 @@ var x = setInterval(function() {
                             
                                 // Display the result in the element with id
                                 document.getElementById("countDown1").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                                document.getElementById("live1").innerHTML = "Live";
+                                document.getElementById("live1").classList.remove("d-none");
                                 if (distance8 < 0) {
                                     clearInterval(x);
                                     document.getElementById("countDown1").innerHTML = "EXPIRED";
@@ -168,7 +168,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-        document.getElementById("live2").innerHTML = "Live";
+        document.getElementById("live2").classList.remove("d-none");
         if (distance2 < 0) {
             distance3 = t3 - now;
             // Time calculations for days, hours, minutes and seconds
@@ -179,7 +179,7 @@ var x = setInterval(function() {
         
             // Display the result in the element with id
             document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-            document.getElementById("live2").innerHTML = "";
+            document.getElementById("live2").classList.add("d-none");
             document.getElementById("locationTitle2").innerHTML = 'Knockhill, Scotland';
             if (distance3 < 0) {
                 distance4 = t4 - now;
@@ -191,7 +191,7 @@ var x = setInterval(function() {
             
                 // Display the result in the element with id
                 document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                document.getElementById("live2").innerHTML = "Live";
+                document.getElementById("live2").classList.remove("d-none");
                 if (distance4 < 0) {
                     distance5 = t5 - now;
                     // Time calculations for days, hours, minutes and seconds
@@ -202,7 +202,7 @@ var x = setInterval(function() {
                 
                     // Display the result in the element with id
                     document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                    document.getElementById("live2").innerHTML = "";
+                    document.getElementById("live2").classList.add("d-none");
                     document.getElementById("locationTitle2").innerHTML = 'Silverstone, Northamptonshire';
                     if (distance5 < 0) {
                         distance6 = t6 - now;
@@ -214,7 +214,7 @@ var x = setInterval(function() {
                     
                         // Display the result in the element with id
                         document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                        document.getElementById("live2").innerHTML = "Live";
+                        document.getElementById("live2").classList.remove("d-none");
                         if (distance6 < 0) {
                             distance7 = t7 - now;
                             // Time calculations for days, hours, minutes and seconds
@@ -225,7 +225,7 @@ var x = setInterval(function() {
                         
                             // Display the result in the element with id
                             document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                            document.getElementById("live2").innerHTML = "";
+                            document.getElementById("live2").classList.add("d-none");
                             document.getElementById("locationTitle2").innerHTML = 'Brands Hatch, Kent';
                             if (distance7 < 0) {
                                 distance8 = t8 - now;
@@ -237,7 +237,7 @@ var x = setInterval(function() {
                             
                                 // Display the result in the element with id
                                 document.getElementById("countDown2").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                                document.getElementById("live2").innerHTML = "Live";
+                                document.getElementById("live2").classList.remove("d-none");
                                 if (distance8 < 0) {
                                     clearInterval(x);
                                     document.getElementById("countDown2").innerHTML = "EXPIRED";
@@ -255,7 +255,6 @@ var x = setInterval(function() {
 // Count Down 3 Porsche Carrera Cup GB
 // Update the count down every 1 second
 var x = setInterval(function() {
-
      // Dates we're counting down to
     var Thruxton = new Date("Aug 16, 2019 10:40:00").getTime();
     var ThruxtonLive = new Date("Aug 18, 2019 19:00:00").getTime();
@@ -292,7 +291,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown3").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-        document.getElementById("live3").innerHTML = "Live";
+        document.getElementById("live3").classList.remove("d-none");
         if (distance2 < 0) {
             distance3 = Silverstone - now;
             // Time calculations for days, hours, minutes and seconds
@@ -303,7 +302,7 @@ var x = setInterval(function() {
         
             // Display the result in the element with id
             document.getElementById("countDown3").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-            document.getElementById("live3").innerHTML = "";
+            document.getElementById("live3").classList.add("d-none");
             document.getElementById("locationTitle3").innerHTML = 'Silverstone, Northamptonshire';
             if (distance3 < 0) {
                 distance4 = SilverstoneLive - now;
@@ -315,7 +314,7 @@ var x = setInterval(function() {
             
                 // Display the result in the element with id
                 document.getElementById("countDown3").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                document.getElementById("live3").innerHTML = "Live";
+                document.getElementById("live3").classList.remove("d-none");
                 if (distance4 < 0) {
                     distance5 = Silverstone2 - now;
                     // Time calculations for days, hours, minutes and seconds
@@ -326,7 +325,7 @@ var x = setInterval(function() {
                 
                     // Display the result in the element with id
                     document.getElementById("countDown3").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                    document.getElementById("live3").innerHTML = "";
+                    document.getElementById("live3").classList.add("d-none");
                     document.getElementById("locationTitle3").innerHTML = 'Silverstone, Northamptonshire';
                     if (distance5 < 0) {
                         distance6 = SilverstoneLive2 - now;
@@ -338,7 +337,7 @@ var x = setInterval(function() {
                     
                         // Display the result in the element with id
                         document.getElementById("countDown3").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                        document.getElementById("live3").innerHTML = "Live";
+                        document.getElementById("live3").classList.remove("d-none");
                         if (distance6 < 0) {
                             distance7 = Brandshatch - now;
                             // Time calculations for days, hours, minutes and seconds
@@ -349,7 +348,7 @@ var x = setInterval(function() {
                         
                             // Display the result in the element with id
                             document.getElementById("countDown3").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                            document.getElementById("live3").innerHTML = "";
+                            document.getElementById("live3").classList.add("d-none");
                             document.getElementById("locationTitle3").innerHTML = 'Brands Hatch, Kent';
                             if (distance7 < 0) {
                                 distance8 = BrandshatchLive - now;
@@ -361,7 +360,7 @@ var x = setInterval(function() {
                             
                                 // Display the result in the element with id
                                 document.getElementById("countDown3").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                                document.getElementById("live3").innerHTML = "Live";
+                                document.getElementById("live3").classList.remove("d-none");
                                 if (distance8 < 0) {
                                     clearInterval(x);
                                     document.getElementById("countDown3").innerHTML = "EXPIRED";
@@ -419,7 +418,7 @@ var x = setInterval(function() {
 
        // Display the result in the element with id
        document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-       document.getElementById("live4").innerHTML = "Live";
+       document.getElementById("live4").classList.remove("d-none");
        if (distance2 < 0) {
            distance3 = Donnington2 - now;
            // Time calculations for days, hours, minutes and seconds
@@ -430,7 +429,7 @@ var x = setInterval(function() {
        
            // Display the result in the element with id
            document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-           document.getElementById("live4").innerHTML = "";
+           document.getElementById("live4").classList.add("d-none");
            document.getElementById("locationTitle4").innerHTML = 'Donington Park, Leicestershire';
            document.getElementById("championship-title").innerHTML ='Toyo Tyres 7 Race Series';
            document.getElementById("championship-title2").innerHTML ='Toyo Tyres 7 Race Series';
@@ -444,7 +443,7 @@ var x = setInterval(function() {
            
                // Display the result in the element with id
                document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-               document.getElementById("live4").innerHTML = "Live";
+               document.getElementById("live4").classList.remove("d-none");
                if (distance4 < 0) {
                    distance5 = Brandshatch - now;
                    // Time calculations for days, hours, minutes and seconds
@@ -455,7 +454,7 @@ var x = setInterval(function() {
                
                    // Display the result in the element with id
                    document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                   document.getElementById("live4").innerHTML = "";
+                   document.getElementById("live4").classList.add("d-none");
                    document.getElementById("locationTitle4").innerHTML = 'Brands Hatch (Indy), Kent';
                    document.getElementById("championship-title").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
                    document.getElementById("championship-title2").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
@@ -469,7 +468,7 @@ var x = setInterval(function() {
                    
                        // Display the result in the element with id
                        document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                       document.getElementById("live4").innerHTML = "Live";
+                       document.getElementById("live4").classList.remove("d-none");
                        if (distance6 < 0) {
                            distance7 = Portimao - now;
                            // Time calculations for days, hours, minutes and seconds
@@ -480,7 +479,7 @@ var x = setInterval(function() {
                        
                            // Display the result in the element with id
                            document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                           document.getElementById("live4").innerHTML = "";
+                           document.getElementById("live4").classList.add("d-none");
                            document.getElementById("locationTitle4").innerHTML = 'Portimao, Portugal';
                            document.getElementById("championship-title").innerHTML ='Toyo Tyres 7 Race Series';
                            document.getElementById("championship-title2").innerHTML ='Toyo Tyres 7 Race Series';
@@ -494,7 +493,7 @@ var x = setInterval(function() {
                            
                                // Display the result in the element with id
                                document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                               document.getElementById("live4").innerHTML = "Live";
+                               document.getElementById("live4").classList.remove("d-none");
                                if (distance8 < 0) {
                                     distance9 = Estoril  - now;
                                     // Time calculations for days, hours, minutes and seconds
@@ -505,7 +504,7 @@ var x = setInterval(function() {
                                 
                                     // Display the result in the element with id
                                     document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                                    document.getElementById("live4").innerHTML = "";
+                                    document.getElementById("live4").classList.add("d-none");
                                     document.getElementById("locationTitle4").innerHTML = 'Estoril, Portgual';
                                     document.getElementById("championship-title").innerHTML = 'Toyo Tyres 7 Race Series';
                                     document.getElementById("championship-title2").innerHTML = 'Toyo Tyres 7 Race Series';
@@ -519,7 +518,7 @@ var x = setInterval(function() {
                                     
                                         // Display the result in the element with id
                                         document.getElementById("countDown4").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-                                        document.getElementById("live4").innerHTML = "Live";
+                                        document.getElementById("live4").classList.remove("d-none");
                                         if (distance10 < 0) {
                                             clearInterval(x);
                                             document.getElementById("countDown4").innerHTML = "EXPIRED";
@@ -569,7 +568,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown5").innerHTML = ("0" + days).slice(-2) + "\xa0  :\xa0  " + ("0" + hours).slice(-2) + "\xa0  :\xa0  " + ("0" + minutes).slice(-2) + "\xa0  :\xa0  " + ("0" + seconds).slice(-2);
-        document.getElementById("live5").innerHTML = "Live";
+        document.getElementById("live5").classList.remove("d-none");
         if (distance2 < 0) {
             clearInterval(x);
             document.getElementById("countDown5").innerHTML = "EXPIRED";
@@ -619,7 +618,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown11").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-        document.getElementById("live11").innerHTML = "Live";
+        document.getElementById("live11").classList.remove("d-none");
         if (distance2 < 0) {
             distance3 = Knockhill - now;
             // Time calculations for days, hours, minutes and seconds
@@ -630,7 +629,7 @@ var x = setInterval(function() {
         
             // Display the result in the element with id
             document.getElementById("countDown11").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-            document.getElementById("live11").innerHTML = "";
+            document.getElementById("live11").classList.add("d-none");
             document.getElementById("locationTitle11").innerHTML = 'Knockhill, Scotland';
             if (distance3 < 0) {
                 distance4 = KnockhillLive - now;
@@ -642,7 +641,7 @@ var x = setInterval(function() {
             
                 // Display the result in the element with id
                 document.getElementById("countDown11").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                document.getElementById("live11").innerHTML = "Live";
+                document.getElementById("live11").classList.remove("d-none");
                 if (distance4 < 0) {
                     distance5 = Silverstone - now;
                     // Time calculations for days, hours, minutes and seconds
@@ -653,7 +652,7 @@ var x = setInterval(function() {
                 
                     // Display the result in the element with id
                     document.getElementById("countDown11").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                    document.getElementById("live11").innerHTML = "";
+                    document.getElementById("live11").classList.add("d-none");
                     document.getElementById("locationTitle11").innerHTML = 'Silverstone, Northamptonshire';
                     if (distance5 < 0) {
                         distance6 = SilverstoneLive - now;
@@ -665,7 +664,7 @@ var x = setInterval(function() {
                     
                         // Display the result in the element with id
                         document.getElementById("countDown11").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                        document.getElementById("live11").innerHTML = "Live";
+                        document.getElementById("live11").classList.remove("d-none");
                         if (distance6 < 0) {
                             distance7 = Brandshatch - now;
                             // Time calculations for days, hours, minutes and seconds
@@ -676,7 +675,7 @@ var x = setInterval(function() {
                         
                             // Display the result in the element with id
                             document.getElementById("countDown11").innerHTML = days + " : " + hours + " : " + minutes + ": " + seconds;
-                            document.getElementById("live11").innerHTML = "";
+                            document.getElementById("live11").classList.add("d-none");
                             document.getElementById("locationTitle11").innerHTML = 'Brands Hatch, Kent';
                             if (distance7 < 0) {
                                 distance8 = BrandshatchLive - now;
@@ -688,7 +687,7 @@ var x = setInterval(function() {
                             
                                 // Display the result in the element with id
                                 document.getElementById("countDown11").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                                document.getElementById("live11").innerHTML = "Live";
+                                document.getElementById("live11").classList.remove("d-none");
                                 if (distance8 < 0) {
                                     clearInterval(x);
                                     document.getElementById("countDown11").innerHTML = "EXPIRED";
@@ -736,7 +735,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-        document.getElementById("live22").innerHTML = "Live";
+        document.getElementById("live22").classList.remove("d-none");
         if (distance2 < 0) {
             distance3 = t3 - now;
             // Time calculations for days, hours, minutes and seconds
@@ -747,7 +746,7 @@ var x = setInterval(function() {
         
             // Display the result in the element with id
             document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-            document.getElementById("live22").innerHTML = "";
+            document.getElementById("live22").classList.add("d-none");
             document.getElementById("locationTitle22").innerHTML = 'Knockhill, Scotland';
             if (distance3 < 0) {
                 distance4 = t4 - now;
@@ -759,7 +758,7 @@ var x = setInterval(function() {
             
                 // Display the result in the element with id
                 document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                document.getElementById("live22").innerHTML = "Live";
+                document.getElementById("live22").classList.remove("d-none");
                 if (distance4 < 0) {
                     distance5 = t5 - now;
                     // Time calculations for days, hours, minutes and seconds
@@ -770,7 +769,7 @@ var x = setInterval(function() {
                 
                     // Display the result in the element with id
                     document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                    document.getElementById("live22").innerHTML = "";
+                    document.getElementById("live22").classList.add("d-none");
                     document.getElementById("locationTitle22").innerHTML = 'Silverstone, Northamptonshire';
                     if (distance5 < 0) {
                         distance6 = t6 - now;
@@ -782,7 +781,7 @@ var x = setInterval(function() {
                     
                         // Display the result in the element with id
                         document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                        document.getElementById("live22").innerHTML = "Live";
+                        document.getElementById("live22").classList.remove("d-none");
                         if (distance6 < 0) {
                             distance7 = t7 - now;
                             // Time calculations for days, hours, minutes and seconds
@@ -793,7 +792,7 @@ var x = setInterval(function() {
                         
                             // Display the result in the element with id
                             document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                            document.getElementById("live22").innerHTML = "";
+                            document.getElementById("live22").classList.add("d-none");
                             document.getElementById("locationTitle22").innerHTML = 'Brands Hatch, Kent';
                             if (distance7 < 0) {
                                 distance8 = t8 - now;
@@ -805,7 +804,7 @@ var x = setInterval(function() {
                             
                                 // Display the result in the element with id
                                 document.getElementById("countDown22").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                                document.getElementById("live22").innerHTML = "Live";
+                                document.getElementById("live22").classList.remove("d-none");
                                 if (distance8 < 0) {
                                     clearInterval(x);
                                     document.getElementById("countDown22").innerHTML = "EXPIRED";
@@ -860,7 +859,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown33").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-        document.getElementById("live33").innerHTML = "Live";
+        document.getElementById("live33").classList.remove("d-none");
         if (distance2 < 0) {
             distance3 = Silverstone - now;
             // Time calculations for days, hours, minutes and seconds
@@ -871,7 +870,7 @@ var x = setInterval(function() {
         
             // Display the result in the element with id
             document.getElementById("countDown33").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-            document.getElementById("live33").innerHTML = "";
+            document.getElementById("live33").classList.add("d-none");
             document.getElementById("locationTitle33").innerHTML = 'Silverstone, Northamptonshire';
             if (distance3 < 0) {
                 distance4 = SilverstoneLive - now;
@@ -883,7 +882,7 @@ var x = setInterval(function() {
             
                 // Display the result in the element with id
                 document.getElementById("countDown33").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                document.getElementById("live33").innerHTML = "Live";
+                document.getElementById("live33").classList.remove("d-none");
                 if (distance4 < 0) {
                     distance5 = Silverstone2 - now;
                     // Time calculations for days, hours, minutes and seconds
@@ -894,7 +893,7 @@ var x = setInterval(function() {
                 
                     // Display the result in the element with id
                     document.getElementById("countDown33").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                    document.getElementById("live33").innerHTML = "";
+                    document.getElementById("live33").classList.add("d-none");
                     document.getElementById("locationTitle33").innerHTML = 'Silverstone, Northamptonshire';
                     if (distance5 < 0) {
                         distance6 = SilverstoneLive2 - now;
@@ -906,7 +905,7 @@ var x = setInterval(function() {
                     
                         // Display the result in the element with id
                         document.getElementById("countDown33").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                        document.getElementById("live33").innerHTML = "Live";
+                        document.getElementById("live33").classList.remove("d-none");
                         if (distance6 < 0) {
                             distance7 = Brandshatch - now;
                             // Time calculations for days, hours, minutes and seconds
@@ -917,7 +916,7 @@ var x = setInterval(function() {
                         
                             // Display the result in the element with id
                             document.getElementById("countDown33").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                            document.getElementById("live33").innerHTML = "";
+                            document.getElementById("live33").classList.add("d-none");
                             document.getElementById("locationTitle33").innerHTML = 'Brands Hatch, Kent';
                             if (distance7 < 0) {
                                 distance8 = BrandshatchLive - now;
@@ -929,7 +928,7 @@ var x = setInterval(function() {
                             
                                 // Display the result in the element with id
                                 document.getElementById("countDown33").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                                document.getElementById("live33").innerHTML = "Live";
+                                document.getElementById("live33").classList.remove("d-none");
                                 if (distance8 < 0) {
                                     clearInterval(x);
                                     document.getElementById("countDown33").innerHTML = "EXPIRED";
@@ -987,7 +986,7 @@ var x = setInterval(function() {
 
        // Display the result in the element with id
        document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-       document.getElementById("live44").innerHTML = "Live";
+       document.getElementById("live44").classList.remove("d-none");
        if (distance2 < 0) {
            distance3 = Donnington2 - now;
            // Time calculations for days, hours, minutes and seconds
@@ -998,7 +997,7 @@ var x = setInterval(function() {
        
            // Display the result in the element with id
            document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-           document.getElementById("live44").innerHTML = "";
+           document.getElementById("live44").classList.add("d-none");
            document.getElementById("locationTitle44").innerHTML = 'Donington Park, Leicestershire';
            document.getElementById("championship-title").innerHTML ='Toyo Tyres 7 Race Series';
            if (distance3 < 0) {
@@ -1011,7 +1010,7 @@ var x = setInterval(function() {
            
                // Display the result in the element with id
                document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-               document.getElementById("live44").innerHTML = "Live";
+               document.getElementById("live44").classList.remove("d-none");
                if (distance4 < 0) {
                    distance5 = Brandshatch - now;
                    // Time calculations for days, hours, minutes and seconds
@@ -1022,7 +1021,7 @@ var x = setInterval(function() {
                
                    // Display the result in the element with id
                    document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                   document.getElementById("live44").innerHTML = "";
+                   document.getElementById("live44").classList.add("d-none");
                    document.getElementById("locationTitle44").innerHTML = 'Brands Hatch (Indy), Kent';
                    document.getElementById("championship-title2").innerHTML ='Caterham Seven 420R, 310R, and 270R Championships';
                    if (distance5 < 0) {
@@ -1035,7 +1034,7 @@ var x = setInterval(function() {
                    
                        // Display the result in the element with id
                        document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                       document.getElementById("live44").innerHTML = "Live";
+                       document.getElementById("live44").classList.remove("d-none");
                        if (distance6 < 0) {
                            distance7 = Portimao - now;
                            // Time calculations for days, hours, minutes and seconds
@@ -1046,7 +1045,7 @@ var x = setInterval(function() {
                        
                            // Display the result in the element with id
                            document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                           document.getElementById("live44").innerHTML = "";
+                           document.getElementById("live44").classList.add("d-none");
                            document.getElementById("locationTitle44").innerHTML = 'Portimao, Portugal';
                            document.getElementById("championship-title2").innerHTML ='Toyo Tyres 7 Race Series';
                            if (distance7 < 0) {
@@ -1059,7 +1058,7 @@ var x = setInterval(function() {
                            
                                // Display the result in the element with id
                                document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                               document.getElementById("live44").innerHTML = "Live";
+                               document.getElementById("live44").classList.remove("d-none");
                                if (distance8 < 0) {
                                     distance9 = Estoril  - now;
                                     // Time calculations for days, hours, minutes and seconds
@@ -1070,7 +1069,7 @@ var x = setInterval(function() {
                                 
                                     // Display the result in the element with id
                                     document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                                    document.getElementById("live44").innerHTML = "";
+                                    document.getElementById("live44").classList.add("d-none");
                                     document.getElementById("locationTitle44").innerHTML = 'Estoril, Portgual';
                                     document.getElementById("championship-title2").innerHTML ='Toyo Tyres 7 Race Series';
                                     if (distance9 < 0) {
@@ -1083,7 +1082,7 @@ var x = setInterval(function() {
                                     
                                         // Display the result in the element with id
                                         document.getElementById("countDown44").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-                                        document.getElementById("live44").innerHTML = "Live";
+                                        document.getElementById("live44").classList.remove("d-none");
                                         if (distance10 < 0) {
                                             clearInterval(x);
                                             document.getElementById("countDown44").innerHTML = "EXPIRED";
@@ -1133,7 +1132,7 @@ var x = setInterval(function() {
 
         // Display the result in the element with id
         document.getElementById("countDown55").innerHTML = ("0" + days).slice(-2) + " : " + ("0" + hours).slice(-2) + " : " + ("0" + minutes).slice(-2) + " : " + ("0" + seconds).slice(-2);
-        document.getElementById("live55").innerHTML = "Live";
+        document.getElementById("live55").classList.remove("d-none");
         if (distance2 < 0) {
             clearInterval(x);
             document.getElementById("countDown55").innerHTML = "EXPIRED";

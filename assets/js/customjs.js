@@ -1,5 +1,5 @@
 // Testing
-var t1 = new Date("Aug 8, 2019 17:34:00").getTime();
+var t1 = new Date("Aug 15, 2019 17:00:00").getTime();
 var t2 = new Date("Aug 8, 2019 17:34:10").getTime();
 var t3 = new Date("Aug 8, 2019 17:34:20").getTime();
 var t4 = new Date("Aug 8, 2019 17:34:30").getTime();
@@ -29,7 +29,7 @@ var x = setInterval(function() {
     var now = new Date().getTime();
 
     // Find the distance between now and the count down date
-    var distance = Thruxton - now;
+    var distance = t1 - now;
 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -623,7 +623,7 @@ var x = setInterval(function() {
     var now = new Date().getTime();
 
     // Find the distance between now and the count down date
-    var distance = Thruxton - now;
+    var distance = t1 - now;
 
     // Time calculations for days, hours, minutes and seconds
     var days = Math.floor(distance / (1000 * 60 * 60 * 24));

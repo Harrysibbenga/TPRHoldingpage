@@ -162,8 +162,7 @@ button {
     font-size: 0.7rem;
 }
 .championship-title, #championship-title {
-    font-size:1.4rem;
-    text-align: center;
+    font-size:1.2rem;
     color: white;
     font-weight: 400;
     font-family: realist,sans-serif;
@@ -181,7 +180,7 @@ button {
     margin-left: 0.2rem;
 }
 .live-text {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-family: realist,sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -226,6 +225,9 @@ button {
 /* ./Coming soon section */
 
 /* Contact form */
+#signUp h2 {
+    font-size:1.4rem
+}
 .md-form input[type=date], .md-form input[type=datetime-local], .md-form input[type=email], .md-form input[type=number], .md-form input[type=password], .md-form input[type=search-md], .md-form input[type=search], .md-form input[type=tel], .md-form input[type=text], .md-form input[type=time], .md-form input[type=url], .md-form textarea.md-textarea {
     color:#4DB3E6;
 }

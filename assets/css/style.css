@@ -190,7 +190,7 @@ button {
 /* Laptop */
 #countDown11, #countDown22, #countDown33, #countDown44, #countDown55 {
     position: absolute;
-    top: 35%;
+    top: 38%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 5rem;
@@ -215,6 +215,12 @@ button {
     top: 23%;
     position: absolute;
     left: 43%;
+}
+
+#live11, #live22, #live33, #live44, #live55 {
+    top: 28%;
+    position: absolute;
+    left: 45%;
 }
 /* ./Laptop */
 
